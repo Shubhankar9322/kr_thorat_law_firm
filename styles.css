@@ -945,3 +945,117 @@ nav a::after {
   }
 }
 
+
+
+/* ---------- Testimonials ---------- */
+
+.testimonials-section {
+  background: #f8f4eb;
+  border-top: 1px solid rgba(104, 82, 43, .18);
+  color: #29251f;
+}
+
+.testimonials-container {
+  width: min(1180px, 84%);
+  margin: 0 auto;
+  padding: 110px 0 120px;
+  display: grid;
+  grid-template-columns: 190px 1fr;
+  gap: 80px;
+}
+
+.testimonials-content {
+  max-width: 980px;
+}
+
+.testimonials-content h2 {
+  margin: 18px 0 45px;
+  font-family: var(--serif);
+  font-size: clamp(55px, 6vw, 82px);
+  font-weight: 500;
+  line-height: .9;
+  letter-spacing: -.035em;
+}
+
+.testimonials-content h2 em {
+  color: #8e7135;
+  font-style: italic;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial-card {
+  padding: 28px 24px 25px;
+  border: 1px solid rgba(104, 82, 43, .18);
+  background: rgba(255, 255, 255, .24);
+}
+
+.testimonial-quote {
+  font-family: var(--serif);
+  font-size: 55px;
+  line-height: .55;
+  color: #a18448;
+  margin-bottom: 18px;
+}
+
+.testimonial-card p {
+  color: #625d54;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-bottom: 17px;
+}
+
+.testimonial-author {
+  margin-top: 24px;
+  padding-top: 17px;
+  border-top: 1px solid rgba(104, 82, 43, .16);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.testimonial-author strong {
+  color: #80662e;
+  font-size: 10px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.testimonial-author span {
+  color: #6b655c;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+@media (max-width: 1000px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonials-container {
+    width: 86%;
+    padding: 75px 0 85px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .testimonials-container {
+    width: 88%;
+  }
+
+  .testimonials-content h2 {
+    font-size: 54px;
+  }
+
+  .testimonial-card {
+    padding: 25px 20px 22px;
+  }
+}
