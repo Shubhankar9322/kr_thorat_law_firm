@@ -1069,8 +1069,11 @@ nav a::after {
   margin: 28px 0 30px;
 }
 .lawyer-portrait {
-  width: 88px;
-  height: 104px;
+  display: block;
+  width: 88px !important;
+  height: 104px !important;
+  max-width: 88px;
+  max-height: 104px;
   object-fit: cover;
   object-position: center top;
   border: 1px solid rgba(161,132,72,.55);
@@ -1090,6 +1093,6 @@ nav a::after {
 }
 @media (max-width: 520px) {
   .hero-lawyer-profile { align-items: center; gap: 14px; }
-  .lawyer-portrait { width: 72px; height: 88px; }
+  .lawyer-portrait { width: 72px !important; height: 88px !important; max-width: 72px; max-height: 88px; }
   .hero-lawyer-profile .lawyer-name { font-size: 10px; }
 }
