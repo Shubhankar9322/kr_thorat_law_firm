@@ -1059,3 +1059,37 @@ nav a::after {
     padding: 25px 20px 22px;
   }
 }
+
+
+/* ---------- Photo provisions (replace the SVG placeholders with approved portraits) ---------- */
+.hero-lawyer-profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 28px 0 30px;
+}
+.lawyer-portrait {
+  width: 88px;
+  height: 104px;
+  object-fit: cover;
+  object-position: center top;
+  border: 1px solid rgba(161,132,72,.55);
+  border-radius: 48px 48px 4px 4px;
+  flex: 0 0 auto;
+}
+.hero-lawyer-profile .lawyer-name { margin: 0; }
+.testimonial-portrait {
+  display: block;
+  width: 82px;
+  height: 82px;
+  margin: 0 0 24px;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(161,132,72,.5);
+  border-radius: 50%;
+}
+@media (max-width: 520px) {
+  .hero-lawyer-profile { align-items: center; gap: 14px; }
+  .lawyer-portrait { width: 72px; height: 88px; }
+  .hero-lawyer-profile .lawyer-name { font-size: 10px; }
+}
